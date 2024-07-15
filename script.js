@@ -10,7 +10,7 @@ const weather_body = document.querySelector('.weather-body');
 const detect_location = document.getElementById('detectLocation');
 
 async function checkWeather(city){
-    const api_key = "520550147168f10c504848a864d66963";
+    const api_key = "api_key";
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${api_key}&units=metric`;
 
     try {
@@ -54,7 +54,7 @@ async function checkWeather(city){
 }
 
 async function detectLocation(lat, lon) {
-    const api_key = "520550147168f10c504848a864d66963";
+    const api_key = "api_key";
     const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${api_key}&units=metric`;
 
     try {
